@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevInTec</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <div class="wrapper">
+        <div class="slider-container">
+            <h5>JOVENES LIDERES EN DESARROLLO WEB</h5>
+            <div class="slider-track">
+                <div class="slider-item"><video src="img/pv.mp4" class="img-slider-p" autoplaY loop></video><br>Texto de prueba</div>
+                <div class="slider-item"><img src="img/s1.jpg" class="img-slider-p"></div>
+                <div class="slider-item"><img src="img/s2.png" class="img-slider-p"></div>
+            </div>
+        </div>
+        <div class="slider-buttons">
+            <i class="fa-solid fa-chevron-right fa-flip-horizontal btn-prev"></i>
+           
+            <i class="fa-solid fa-chevron-right btn-next"></i>
+        </div>
+        
+    </div>
+    <div class="swiper mySwiper cards-container" id="cards">
+        <div class="swiper-wrapper">
+            <div class="card swiper-slide">
+                <img src="img/ruth.jpg " alt="" class="persona">
+                <div class="name">Ruth Delvalle</div>
+                <div class="title">HTML Y CSS</div>
+                <div class="contact">
+                  Teléfono: 0984 577734 <br>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <img src="https://yisudev.github.io/port2023/build/static/media/foto2.2fc19748e75438b869af.webp " alt="" class="persona">
+                <div class="name">Jesus Baez</div>
+                <div class="title">MERN STACK DEVELOPER</div>
+                <div class="contact">
+                  Teléfono: 0986 737498 <br>
+                </div>
+            </div>
+            
+            <div class="card swiper-slide">
+                <img src="img/ma.jpg" alt="" class="persona">
+                <div class="name">Matias Orzusa</div>
+                <div class="title">Marketing y UX desing</div>
+                <div class="contact">
+                  Teléfono: 0975 117070 <br>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <img src="img/francisco.jpg" alt="" class="persona">
+                <div class="name">David Cortesi</div>
+                <div class="title">Javascript developer junior</div>
+                <div class="contact">
+                  Teléfono: 0991 416961 <br>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <img src="img/rodrigo.jpeg" alt="" class="persona">
+                <div class="name">Rodrigo Gomez</div>
+                <div class="title">Javascript developer junior & UI designer</div>
+                <div class="contact">
+                  Teléfono: 0984 342608 <br>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="contacto" id="Redes">
+        <div class="fondo">
+            <ul class="redes-ul">
+                <li><a href="" class="redes"><img src="img/ig.png" alt=""><span>instagram</span></a></li>
+                <li><a href="" class="redes"><img src="img/fb.png" alt=""><span>facebook</span></a></li>
+                <li><a href="" class="redes"><img src="img/wa.png" alt=""> <span>whatsapp</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <a href="https://goo.gl/maps/R9LDoUkPqtNQ4w346" id="ubicacion"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226915.02520545849!2d-56.0373214279576!3d-27.296056060845928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457955e5597cfeb%3A0x6ff7d247ff05c071!2sEncarnaci%C3%B3n!5e0!3m2!1ses-419!2spy!4v1686359195438!5m2!1ses-419!2spy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <h2 class="empresa">DevInTec</h2>
+        <a href="#" class="enlace">
+            <img src="https://www.returngis.net/wp-content/uploads/2013/05/HTML-logo.jpg" alt="" class="logo">
+        </a>
+        <ul>
+            <li>
+                <a href="#" class="active">Inicio</a>
+                <a href="#cards">Personal</a>
+                <a href="#Redes">Redes</a>
+                <a href="#ubicacion">Ubicacion</a>
+            </li>
+        </ul>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

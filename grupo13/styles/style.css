@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+    background-color: rgb(42, 42, 48);
+}
+.cards-container{
+    margin-top: 10vh;
+    min-height: 100vh;
+    width: 90%;
+}
+html{
+    scroll-behavior: smooth;
+}
+h5{
+    position: absolute;
+    left: 300px;
+    font-size: xx-large;
+    bottom: 300px;
+    color:white;
+    backdrop-filter: blur(40px);
+    padding: 40px;
+    border-radius: 20px;
+    z-index: 1000;
+}
+.swiper {
+    height: 300px;
+    padding: 50px;
+  }
+.card {
+    display: flex;
+    align-items: center;
+
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+.card {
+    width: 300px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-top: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .contact {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+  }
+.persona{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+/*CONTACTO ESTILOS RUTH DEL VALLE, CORRECION JESUS BAEZ*/
+ul{
+    list-style: none;
+}
+.contacto{
+    min-height: 100vh;
+    display: flex;
+}
+.fondo{
+    width: 90%;
+    height: 500px;
+    border-radius: 100px;
+    margin: auto;
+    background-color: white;
+}
+.redes-ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.redes, img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.fondo:hover{
+    background-color: rgb(42, 42, 42);
+    transition: .5s;
+}
+.redes:hover{
+    transform: scale(2);
+    letter-spacing: 5px;
+    transition: .5s;
+}
+/*ENCABEZADO OSEA NAV*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background: rgb(32, 32, 58);
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 10000;
+    
+}
+h2{
+    color: white;
+    position: absolute;
+    padding-top: 10px;
+    top:0px;
+    margin-left: 110px;
+}
+.enlace{
+    top: -1%;
+    position: absolute;
+    padding: 5px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+
+nav ul{
+    top: 110px;
+    float: right;
+    margin-right: 20px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    
+    margin: 20px 5px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 18px;
+    padding: 50px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+}
+nav a:hover{
+    color: white;
+}
+
+ li a:hover{
+    background: rgb(41, 42, 51);
+    transition: .5s;
+    letter-spacing: 2px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #000090;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    nav ul li a{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        widows: 100%;
+        height: 100vh;
+        background: blc;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: blue;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+.map {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+/*SLIDER IMG*/
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px; }
+  
+  .slider-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    
+  }
+  iframe{
+    width: 100%;
+    height: 100vh;
+  }
+  .slider-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: .2s;
+    transition: .2s; }
+  
+  .slider-item {
+    height: 700px;
+  }
+  .img-slider-p{
+    width: 100%;
+    border-radius: 0;
+    height: 100%;
+  }
+  .slider-buttons {
+    position: relative;
+    top: -400px;
+
+  }
+  .slider-buttons > i{
+    padding-top: 20px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    background-color: rgba(60, 60, 66, 0.349);
+  }
+.btn-prev{
+    font-size: 50px;
+}
+.btn-prev{
+    position:relative;
+    left: 5px;
+    font-size: 50px;
+}
+.btn-next{
+    position: absolute;
+    right: 5px;
+    font-size: 50px;
+}

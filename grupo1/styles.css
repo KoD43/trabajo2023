@@ -1,0 +1,360 @@
+/* Estilos para la barra de navegación */
+header{
+  padding: 65px;
+  background-color: rgba(129, 129, 129, 0.95);
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+.logo{
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -6%;
+}
+.header-h1{
+  text-align: center;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+nav {
+  border-top: 3px solid rgb(0, 0, 0);
+  border-end-end-radius: 5px;
+  border-end-start-radius: 5px;
+  margin-block-end: 10px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(26, 26, 26, 0.97);
+}
+.produc{
+  text-align: center;
+  background-color:  rgba(159, 152, 152, 0.9); 
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+
+}
+.redes-dropdown {
+  position: relative;
+  z-index: 2;
+}
+.redes-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #524747;
+  padding: 7px;
+  box-shadow: 0 2px 5px rgba(173, 8, 8, 0.2);
+  border-radius: 7px; 
+}
+
+.redes-dropdown:hover .redes-content {
+  display: flex;
+  flex-direction: column;
+  padding-block-end:2%;
+}
+
+.redes-content a {
+  margin-bottom: 5px;
+ 
+}
+
+.redes-content img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 40px;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f0f0f3;
+}
+
+
+/* Estilos para las columnas de productos */
+.container {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.column {
+  text-align: center;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+.column img:hover {
+  transform: scale(1.1); /* Aplica una escala del 110% al hacer hover */
+}
+.column img {
+  transition: transform 0.3s; /* Agrega una transición suave para el efecto */
+}
+
+
+ .column img{ border-radius: 80px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+ 
+}
+
+#contacto {
+  background-color: rgba(117, 116, 116, 0.8); /* Fondo translúcido */
+  border-radius: 8px;
+  text-align: left;
+  width: 100%;
+  padding: 20px;
+  color: #151515;
+}
+
+#contacto li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#contacto h2 {
+  text-decoration: underline;
+  font-size: 19px; /* Tamaño de fuente del título de contacto */
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+#contacto h3 {
+  margin: 10px 0;
+  font-size: 17px; /* Tamaño de fuente de los elementos de contacto */
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+
+/* Estilos para el botón de menú */
+#menu-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.menu-toggle-button {
+  background-color: #797979;
+  color: #f0f0f3;
+  position: absolute;
+  bottom: 60px;
+  right: 30px;
+  padding: 10px 20px;
+  color: #f3f3f8;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.menu-toggle-button:hover {
+  background-color: #555;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  position: absolute;
+  background-color: #f9f8fc;
+  padding: 10px;
+  list-style-type: none;
+  text-align: right;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.menu-items li {
+  margin-bottom: 10px;
+}
+
+.menu-items li:last-child {
+  margin-bottom: 0;
+}
+
+.carousel-container {
+  max-width: 200px; /* Ancho máximo del carrusel */
+  margin: 50 auto; /* Centrar el carrusel horizontalmente */
+}
+
+.carousel-container img {
+  max-width: 30%; /* Tamaño máximo de las imágenes */
+  height: min-content; /* Altura automática para mantener la proporción de aspecto */
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://previews.123rf.com/images/alan64/alan641401/alan64140100180/25387168-muchas-guitarras-que-se-presentan-en-una-tienda-de-m%C3%BAsica.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: blur(5px); /* Ajusta el valor para controlar el nivel de desenfoque */
+  z-index: -1;
+}
+
+.container {
+  background-color: rgba(39, 22, 22, 0.8); /* Cambia el valor para ajustar la opacidad */
+  padding: 20px;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Cambia el valor para ajustar la opacidad */
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.menu-items {
+  display: none;    
+  position: absolute;
+  top: 100%; /* Ajusta la posición vertical del menú */
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.menu-items.active {
+  display: block;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow: auto;
+  margin: 0;
+  padding: 0; 
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+nav ul li a {
+  position: relative;
+}
+
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #c43232; /* Cambia el color a tu preferencia */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.price{
+  color: #c1c6c7;
+}
+.button{
+  color: rgb(255, 255, 255);
+  background-color: #610f0f;
+  padding: 10px 20px;
+  transition: transform 0.3s ease;
+}
+.button:hover{
+  transform: scale(1.1);
+
+}
+.column p{
+  color: #fff;
+}
+.column h3{
+  color: #b1b1b1;
+  text-decoration: underline;
+}
+.carrusel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+  /* Opcional: Agregar un tamaño máximo para evitar el desbordamiento horizontal */
+  max-width: 100%;
+}
+
+@keyframes desplazamiento {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.elemento {
+  flex: 1 0 auto;
+  margin: 0 50px;
+  background-color: #534545;
+  height: 500px;
+  width: 500px;
+  animation: desplazamiento 10s linear infinite;
+}
+.producto {
+ 
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 120px; /* Espacio lateral entre los productos */
+      display: inline-block; /* Mantiene los productos en línea */
+      background-color: rgba(158, 148, 148, 0.8);
+      border-radius: 20px;
+      box-shadow: 3px 3px 4px #000000;
+    }
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.producto h3 {
+  margin: 10px 0;
+}
+
+.producto p {
+  margin-bottom: 10px;
+  
+}
+button{
+  background-color: #7d4040; /* Color de fondo */
+  color: #ffffff; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  border-radius: 19px; /* Borde redondeado */
+}
+
+button:hover {
+  background-color:  #663535;; /* Color de fondo al pasar por encima */
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+  transition-delay: 50ms;
+}
+footer {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}

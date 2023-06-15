@@ -1,0 +1,188 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+.header{
+    background-color: rgba(255, 255, 255, 0.521);
+    height: 40px;
+    font-size: 30px;
+}
+
+.nav1{
+    color: inherit;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.nav1:hover{
+    background-color: #837f7f;
+}
+
+.nav1-1{
+    padding-right: 836px;
+}
+
+.seccion2{
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.39);
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.search{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sushi{
+    background-color: rgba(255, 255, 255, 0.204);
+}
+
+.search-txt h2{
+    font-size: 30px;
+    height: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.swiper{
+    width: 100%;
+}
+
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+}
+
+.body{
+    background-image: url(https://zagame-1452c.kxcdn.com//images/page-banners/banner-contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20em;
+    filter: blur(2.5px);
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow: auto;
+  }
+
+.eslogan{
+    height: 700px;
+    padding-top: 210px;    
+    background-color: rgba(240, 248, 255, 0.170);
+}
+
+.nav2-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://zagame-1452c.kxcdn.com//images/page-banners/banner-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: blur(5px); /* Ajusta el valor para controlar el nivel de desenfoque */
+    z-index: -1;
+  }
+  .swiper{
+    overflow: visible;
+  }
+  .nav2-2 {
+    text-align: center;
+    padding-top: 80px;
+    position: relative;
+    font-size: 45px;
+  }
+
+.nav2-3{
+    text-align: center;
+    font-size: 40px;
+}
+
+.nav3{
+text-align: center;
+font-size: large;
+height: 260px;
+background-color: rgba(255, 255, 255, 0.8);
+margin-top: 80px;
+margin-bottom: 80px;
+}
+
+.nav3-1{
+    display: flex;
+    padding: 30px 70px;
+}
+
+.nav3-3{
+    padding-right: 29px;
+}
+
+.ubicacion{
+    padding: 0px 100px 20px;
+
+}
+.ubicacion img{
+    border-radius: 100px;
+}
+
+.nav5{
+    text-align: center;
+}
+
+.nav5-1{
+color: aliceblue ;
+background-color: rgb(12, 12, 12);
+padding-top: 30px;
+height: 200px;
+font-size: 20px;
+}
+
+.contactos{
+    padding-left: 350px;
+
+}
+
+.contacto1{
+display: flex;
+padding-top: 20px;
+align-items: center;
+}
+
+.bloq1{
+padding-left: 90px;
+padding-right: 40px;
+color:  rgb(12, 12, 12);
+display: block;
+}
+
+.bloq{
+display: block;
+}
+
+
+
+

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazon - Página Principal</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    /* Estilos para el encabezado */
+    header {
+      background-color: #11a585a2;
+      padding: 10px;
+      color: #b11919;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+    }
+    
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+      color: beige;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .navigationtem {
+      list-style: none;
+      margin: 6;
+      padding: 0;
+      display: flex;
+      padding: 20px;
+      color: bisque;
+    }
+    
+    .navigation a {
+      text-decoration: none;
+      padding: 20px;
+      color: #741b1b;
+      font-family: Arial;
+      color: aqua;
+    }
+    
+    /* Estilos para el carrusel de imágenes */
+    .carousel {
+      width: 100%;
+      height: 400px;
+      background-color: #6a7c8321;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .carousel img {
+      max-width: 100%;
+      max-height: 100%;
+      transition: transform 0.5s ease;
+    }
+    
+    /* Estilos para el título y la sección de productos */
+    .title {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 20px;
+      color: black;
+      background-color: bisque;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .product-section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-top: 4px;
+      width: 100%;
+      height: 400px;
+      background-color: bisque;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .contenedor-producto{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .product img{
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      overflow: hidden;
+      object-position: center;
+      text-align: center;
+      background-color: bisque;
+    }
+    
+    /* Estilos para la sección de contacto */
+    .contact-section {
+      background-color: #5268a7;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .contact-info {
+      margin-bottom: 10px;
+    }
+    
+    .social-media {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .social-media a, .social-media img {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin: 0 10px;
+    }
+    
+    /* Estilos generales */
+    body {
+      margin: 8;
+    
+    }
+  </style>
+  <script>
+    // Carrusel automático
+    window.addEventListener("DOMContentLoaded", function() {
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".carousel-img");
+      const totalSlides = slides.length ;
+
+      function showSlide() {
+        slides[currentSlide].style.transform = "translateX(0)";
+        setTimeout(hideSlide, 2000);
+      }
+
+      function hideSlide() {
+        slides[currentSlide].style.transform = "translateX(100%)";
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slides[currentSlide].style.transform = "translateX(-100%)";
+        setTimeout(showSlide, 2000);
+      }
+      showSlide();
+      hideSlide();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">Amazón</div>
+    <nav class="navigation">
+      <ul class="navigationtem">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="carousel">
+    <img src="img1.jpg" alt="Imagen 1" class="carousel-img">
+    <img src="img2.jpg" alt="Imagen 2" class="carousel-img">
+    <img src="img3.jpg" alt="Imagen 3" class="carousel-img">
+  </div>
+  
+ 
+  
+  <section class="product-section">
+    <h2 class="title">Descubre nuestra amplia selección de productos</h2>
+    <div class="contenedor-producto">
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxVTMGrTSfhjRra6HtYTAljRSw1-3MC7I8Hw&usqp" alt="Producto 1">
+        <h3>Accesorios Gamers</h3>
+        <p>Precio: Desde 100.000GS</p>
+      </div>
+      <div class="product">
+        <img src="pnj.4.jpg"  alt="Producto 2">
+        <h3>Conjuntos Deportivos</h3>
+        <p>Precio: Desde 80.000GS </p>
+      </div>
+      <div class="product">
+        <img src="png3 (1).jpg" alt="producto 3">
+        <h3>Muebles para tu Hogar</h3>
+        <p>Precio: De Hasta 1.000.000GS</p>
+      </div>
+    </div>
+
+  </section>
+  <section class="product-section">
+    <h2 class="title">Nuevos lanzamientos</h2>
+    <div class="contenedor-producto">
+      <div class="product">
+        <img src="juguete1.jpg" alt="Producto 4">
+        <h3>Guguetes para Niños</h3>
+        <p>Precio: Desde 55.000GS</p>
+      </div>
+      <div class="product">
+        <img src="lentes2.jpg" alt="Producto 5">
+        <h3>La mejor Gama de lentes de Sol</h3>
+        <p>Precio: Desde 36.000GS</p>
+      </div>
+      <div class="product">
+        <img src="zapato.webp" alt="Producto 6">
+        <h3>Tu mejor Calzado</h3>
+        <p>Precio: Desde 120.000GS</p>
+      </div>
+    </section>
+    <section class="product-section">
+      <h2 class="title">Ofertas especiales</h2>
+      <div class="contenedor-producto">
+        <div class="product">
+          <img src="A30.jpg" alt="Producto 7">
+          <h3>Celular Samsung Galaxy A30 </h3>
+          <p>Precio: 1.500.OOOGS</p>
+        </div>
+        <div class="product">
+          <img src="rosa.jpg" alt="Producto 8">
+          <h3> Bolsa Michael Kors</h3>
+          <p>Precio: 95.000GS</p>
+        </div>
+        <div class="product">
+          <img src="Casa.png" alt="Producto 9">
+          <h3>Casa para Perro portátil</h3>
+          <p>Precio: 65.000GS</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Contacto</h2>
+      <p>Correo electrónico: info@amazon.com</p>
+    </div>
+    
+    <div class="social-media">
+      <a href="https://www.instagram.com/amazon"><img src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-png-instagram-logo-camel-productions-website-25.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/amazon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="Facebook"></a>
+      <a href="https://wa.me/1234567890"><img src="https://es.logodownload.org/wp-content/uploads/2018/10/whatsapp-logo-11.png" alt="WhatsApp"></a>
+    </div>
+  </section>
+</body>
+</html>
